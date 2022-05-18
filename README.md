@@ -1,3 +1,5 @@
+*this is a minimal fork just in case we need to make dockerfile changes for SamizdApp*
+
 # Yggdrasil
 
 [![Build status](https://github.com/yggdrasil-network/yggdrasil-go/actions/workflows/ci.yml/badge.svg)](https://github.com/yggdrasil-network/yggdrasil-go/actions/workflows/ci.yml)
