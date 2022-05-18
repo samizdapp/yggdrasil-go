@@ -1,3 +1,8 @@
+# Don't copy over .git when it's a submodule (.git is a file)
+# If you're using this as a submodule you'll need to set $PKGVER yourself
+.git
+!.git/*
+
 contrib/
 !contrib/docker
 !contrib/semver

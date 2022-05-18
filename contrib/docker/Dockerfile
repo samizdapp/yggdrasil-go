@@ -5,6 +5,10 @@ WORKDIR /src
 
 ENV CGO_ENABLED=0
 
+# Support specifying package version
+ARG PKGVER
+ENV PKGVER $PKGVER
+
 RUN apk add git && ./build && go build -o /src/genkeys cmd/genkeys/main.go
 
 FROM docker.io/alpine
