@@ -1,0 +1,7 @@
+contrib/
+!contrib/docker
+!contrib/semver
+
+.github/
+misc/
+*.md
