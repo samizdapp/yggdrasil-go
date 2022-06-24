@@ -24,6 +24,8 @@ COPY contrib/docker/entrypoint.sh /usr/bin/entrypoint.sh
 # USER yggdrasil-network
 # TODO: Make running unprivileged work
 
+RUN apk add nano
+
 VOLUME [ "/etc/yggdrasil-network" ]
 
 ENTRYPOINT [ "/usr/bin/entrypoint.sh" ]
