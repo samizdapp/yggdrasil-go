@@ -15,6 +15,7 @@ if [ ! -f $CONF ]; then
 fi
 
 # jq '.Peers = [  ]' "$CONF" > "$tmp" && mv "$tmp" "$CONF"
+jq '.Peers = ["tls://51.38.64.12:28395"]' "$CONF" > "$tmp" && mv "$tmp" "$CONF"
 
 yggdrasil --useconf -json < "$CONF_DIR/config.conf"
 exit $?
